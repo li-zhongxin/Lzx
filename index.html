@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <title>拆弹密码挑战</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- 添加登录界面 -->
+    <div class="login-container" id="loginScreen">
+        <div class="login-box">
+            <h2>登录</h2>
+            <div class="login-form">
+                <div class="input-group">
+                    <label for="username">用户名</label>
+                    <input type="text" id="username" placeholder="请输入用户名">
+                </div>
+                <div class="input-group">
+                    <label for="password">密码</label>
+                    <input type="password" id="password" placeholder="请输入密码">
+                </div>
+                <button id="loginBtn">登录</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- 游戏主界面 -->
+    <div class="game-container" style="display: none;">
+        <div class="mode-select">
+            <h1>拆弹密码挑战</h1>
+            <div class="mode-buttons">
+                <button id="singlePlayer">单人模式</button>
+                <button id="multiPlayer">双人模式</button>
+            </div>
+        </div>
+
+        <div class="level-info">
+            <div class="timer">时间剩余: <span id="time">05:00</span></div>
+            <div class="mode-info">模式: <span id="mode-display">选择模式</span></div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html> 
